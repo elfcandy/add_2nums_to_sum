@@ -55,12 +55,12 @@ int main(int argc, char **argv)
 	parseParameters(argc, argv);
 
 	TIME_DEFINE_VAR
-    INTERNAL_TIME_START(&start_tv);
+	INTERNAL_TIME_START(&start_tv);
 
 	g_dataCnt = sortData(g_aData, g_dataCnt, g_eSortType);
 
-    INTERNAL_TIME_STOP(&stop_tv);
-    INTERNAL_TIME_REPORT("sort g_aData", start_tv, stop_tv);
+	INTERNAL_TIME_STOP(&stop_tv);
+	INTERNAL_TIME_REPORT("sort g_aData", start_tv, stop_tv);
 
 
 	t_halfVal = g_goalSum/2;
